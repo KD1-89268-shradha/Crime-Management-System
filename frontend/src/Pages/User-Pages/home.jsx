@@ -5,7 +5,12 @@ import CrimeCardStatus from "../../Images/CrimeCardStatus.jpeg"
 import CrimeCardHistory from "../../Images/CrimeCardHistory.jpg"
 // import Footer from "../../Components/User-Components/footer";
 // import ContactInfo from "../../Components/User-Components/contactInfo";
+<<<<<<< HEAD
 // import NavBar from "../../Components/User-Components/navbar";
+=======
+import Footer from '../../components/User-Components/footer'
+import ContactInfo from "../../components/User-Components/contactInfo"
+>>>>>>> c5d0a67aadc59530899ff36b03336b4baaae2712
 
 function Home() {
   return (
@@ -96,9 +101,9 @@ function Home() {
 
         </section>
 
-      {/* <ContactInfo/> */}
+      <ContactInfo/>
 
-         {/* <Footer /> */}
+         <Footer />
       </div>
     </>
   )
