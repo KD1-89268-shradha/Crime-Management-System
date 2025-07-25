@@ -1,4 +1,4 @@
-// import AdminNavBar from "../../Components/Admin-Components/admin_navbar";
+// import AdminNavBar from '../../components/Admin-Components/admin_navbar';
 // import Footer from "../../Components/User-Components/footer";
 import HomeImage from '../../Images/admin-home.jpg'
 import { Link } from "react-router-dom";
