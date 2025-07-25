@@ -5,6 +5,8 @@ import CrimeCardStatus from "../../Images/CrimeCardStatus.jpeg"
 import CrimeCardHistory from "../../Images/CrimeCardHistory.jpg"
 // import Footer from "../../Components/User-Components/footer";
 // import ContactInfo from "../../Components/User-Components/contactInfo";
+import Footer from '../../components/User-Components/footer'
+import ContactInfo from "../../components/User-Components/contactInfo"
 
 function Home() {
   return (
@@ -95,9 +97,9 @@ function Home() {
 
         </section>
 
-      {/* <ContactInfo/> */}
+      <ContactInfo/>
 
-         {/* <Footer /> */}
+         <Footer />
       </div>
     </>
   )
