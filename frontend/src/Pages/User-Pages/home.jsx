@@ -3,7 +3,14 @@ import jailImage from "../../Images/2ndhome.jpg"
 import CrimeCardReport from "../../Images/CrimeCardReport.png"
 import CrimeCardStatus from "../../Images/CrimeCardStatus.jpeg"
 import CrimeCardHistory from "../../Images/CrimeCardHistory.jpg"
+
 import NavBar from "../../Component/User-component/navbar"
+
+
+// import Footer from "../../Components/User-Components/footer";
+// import ContactInfo from "../../Components/User-Components/contactInfo";
+import Footer from '../../components/User-Components/footer'
+import ContactInfo from "../../components/User-Components/contactInfo"
 
 
 function Home() {
@@ -95,9 +102,9 @@ function Home() {
 
         </section>
 
-      {/* <ContactInfo/> */}
+      <ContactInfo/>
 
-         {/* <Footer /> */}
+         <Footer />
       </div>
     </>
   )
