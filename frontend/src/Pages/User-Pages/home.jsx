@@ -3,8 +3,8 @@ import jailImage from "../../Images/2ndhome.jpg"
 import CrimeCardReport from "../../Images/CrimeCardReport.png"
 import CrimeCardStatus from "../../Images/CrimeCardStatus.jpeg"
 import CrimeCardHistory from "../../Images/CrimeCardHistory.jpg"
-// import Footer from "../../Components/User-Components/footer";
-// import ContactInfo from "../../Components/User-Components/contactInfo";
+import Footer from "../../User-Components/footer";
+import ContactInfo from "../../User-Components/contactInfo"
 
 function Home() {
   return (
@@ -95,9 +95,9 @@ function Home() {
 
         </section>
 
-      {/* <ContactInfo/> */}
+      <ContactInfo/>
 
-         {/* <Footer /> */}
+         <Footer />
       </div>
     </>
   )
