@@ -1,7 +1,7 @@
 import React from 'react'
 import Home from './Pages/User-Pages/home'
 import {Routes, Route} from 'react-router-dom'
-import AdminHome from './Pages/Admin-Pages/admin_home'
+import Policehome from './Pages/Police-Pages/policehome'
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
       <Routes>
         <Route path='/' element = {<Home/>}/>
-        <Route path ='/admin-home' element={<AdminHome/>}/>
+        <Route path='/policehome' element={<Policehome />}></Route>
       </Routes>
     </div>
   )
