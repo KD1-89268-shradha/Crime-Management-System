@@ -5,6 +5,7 @@ import CrimeCardStatus from "../../Images/CrimeCardStatus.jpeg"
 import CrimeCardHistory from "../../Images/CrimeCardHistory.jpg"
 // import Footer from "../../Components/User-Components/footer";
 // import ContactInfo from "../../Components/User-Components/contactInfo";
+// import NavBar from "../../Components/User-Components/navbar";
 
 function Home() {
   return (
