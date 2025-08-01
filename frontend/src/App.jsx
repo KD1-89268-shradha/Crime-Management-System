@@ -24,6 +24,12 @@ import AdminLogin from './Pages/Admin-Pages/admin_login'
  
 
 
+
+
+import Contact from './Pages/User-Pages/contact';
+
+
+
 function App() {
   return (
     <div className='App'>
@@ -40,6 +46,9 @@ function App() {
 
 
         <Route path ='/adminhome' element={<AdminHome/>}/>
+
+        <Route path='/contact' element={<Contact />} />
+
         <Route path ='/policelogin' element={<Police_login/>}/>
         <Route path ='/policecomplaints' element={<PoliceComplaints/>}/>
         <Route path='/policeinquires' element={<PoliceInquires></PoliceInquires>}></Route>
@@ -101,6 +110,7 @@ function App() {
         
         <Route path='/login/admin' element={<AdminLogin />} />
         {/* <Route path='/admin-complaints' element={<AdminComplaints />} /> */}
+
 
       </Routes>
     </div>  
