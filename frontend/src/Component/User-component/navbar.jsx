@@ -26,7 +26,7 @@ function NavBar() {
                                 <NavDropdown title="Login" id="login-dropdown">
                                     <NavDropdown.Item as={NavLink} to="/login/user">User</NavDropdown.Item>
                                     <NavDropdown.Item as={NavLink} to="/login/admin">Admin</NavDropdown.Item>
-                                    <NavDropdown.Item as={NavLink} to="/login/police">Police</NavDropdown.Item>
+                                    <NavDropdown.Item as={NavLink} to="/policelogin">Police</NavDropdown.Item>
                                 </NavDropdown>
                             
                         </Nav>
