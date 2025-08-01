@@ -27,6 +27,13 @@ import AdminComplaints from './Pages/Admin-Pages/admin_complaints'
 
 
 import Contact from './Pages/User-Pages/contact';
+import UpdateComplaint from './Pages/User-Pages/update'
+import Status from './Pages/User-Pages/status'
+import History from './Pages/User-Pages/history'
+import AddPoliceStation from './components/Admin-Components/add_police_station'
+import AddPoliceOfficer from './components/Admin-Components/add_police_officer'
+// import UpdatePoliceStation from './Pages/Admin-Pages/update_police_station'
+// import PoliceProtection from './Pages/Police-Pages/police_protection'
 
 
 
@@ -43,7 +50,7 @@ function App() {
         <Route path='/register' element={<RegisterUser />} />
         <Route path='/user' element={<UserLogin />} />
         <Route path='/complaints' element={<Complaints />} />
-        <Route path="/updateComplaint/:complaintId" element={<UpdateComplaint />} />
+        <Route path="/updateComplaint/:complaintId" element={<UpdateComplaint/>} />
 
         <Route path ='/adminhome' element={<AdminHome/>}/>
 
@@ -115,6 +122,88 @@ function App() {
         {/* <Route path='/admin-complaints' element={<AdminComplaints />} /> */}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Route path='/status' element={<Status />} />
+    <Route path='/history' element={<History />} />
+    <Route path='/add-police-station' element={<AddPoliceStation />} />
+    <Route path='/add-police-officer' element={<AddPoliceOfficer />} />
+
+    {/* <Route path="/update-police-station/:id" element={<UpdatePoliceStation />} /> */}
       </Routes>
     </div>  
   )
