@@ -11,7 +11,7 @@ import UserLogin from './Pages/User-Pages/login'
 
 
 import AdminLogin from './Pages/Admin-Pages/admin_login'
-// import AdminComplaints from './Pages/Admin-Pages/admin_complaints'
+import AdminComplaints from './Pages/Admin-Pages/admin_complaints'
  
 
 
@@ -37,7 +37,7 @@ function App() {
         
         
         <Route path='/login/admin' element={<AdminLogin />} />
-        {/* <Route path='/admin-complaints' element={<AdminComplaints />} /> */}
+        <Route path='/admin-complaints' element={<AdminComplaints />} />
       </Routes>
     </div>  
   )
