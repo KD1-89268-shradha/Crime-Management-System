@@ -15,7 +15,6 @@ import UserLogin from './Pages/User-Pages/login'
 import Complaints from './Pages/User-Pages/complaints';
 import ComplaintDetailsUser from './Pages/User-Pages/complaint_details';
 
-
 function App() {
   return (
     <div className='App'>
@@ -40,7 +39,6 @@ function App() {
 
         <Route path ='/complaint' element={<Complaints/>}/>
         <Route path='/viewDetails' element={<ComplaintDetailsUser />} />
-       
 
       </Routes>
     </div>  
