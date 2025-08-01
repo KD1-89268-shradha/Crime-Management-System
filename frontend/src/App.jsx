@@ -7,8 +7,9 @@ import AdminHome from './Pages/Admin-Pages/admin_home'
 import './App.css';
 import RegisterUser from './Pages/User-Pages/register'
 import UserLogin from './Pages/User-Pages/login'
-
-
+import AdminInquires from './Pages/Admin-Pages/admin_inquries'
+import AdminPoliceOfficers from './Pages/Admin-Pages/admin_police_officers'
+import ComplaintDetails from './components/User-Components/complaint_details'
 
 
 
@@ -31,6 +32,50 @@ function App() {
 
         <Route path ='/adminhome' element={<AdminHome/>}/>
 
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      <Route path='/admin-users-inquires' element={<AdminInquires />} />
+
+
+      <Route path='/admin-police-officers' element={<AdminPoliceOfficers />} />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <Route path='/view' element={<ComplaintDetails />} />
       </Routes>
     </div>  
   )
