@@ -27,6 +27,9 @@ import AdminComplaints from './Pages/Admin-Pages/admin_complaints'
 
 
 import Contact from './Pages/User-Pages/contact';
+import UpdateComplaint from './Pages/User-Pages/update'
+import Status from './Pages/User-Pages/status'
+import History from './Pages/User-Pages/history'
 
 
 
@@ -43,7 +46,7 @@ function App() {
         <Route path='/register' element={<RegisterUser />} />
         <Route path='/user' element={<UserLogin />} />
         <Route path='/complaints' element={<Complaints />} />
-        <Route path="/updateComplaint/:complaintId" element={<UpdateComplaint />} />
+        <Route path="/updateComplaint/:complaintId" element={<UpdateComplaint/>} />
 
         <Route path ='/adminhome' element={<AdminHome/>}/>
 
@@ -114,6 +117,85 @@ function App() {
           
         {/* <Route path='/admin-complaints' element={<AdminComplaints />} /> */}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Route path='/status' element={<Status />} />
+    <Route path='/history' element={<History />} />
 
       </Routes>
     </div>  
