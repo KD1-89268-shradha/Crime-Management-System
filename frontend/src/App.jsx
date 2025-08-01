@@ -7,6 +7,10 @@ import AdminHome from './Pages/Admin-Pages/admin_home'
 import './App.css';
 import RegisterUser from './Pages/User-Pages/register'
 import UserLogin from './Pages/User-Pages/login'
+import Police_login from './Pages/Police-Pages/police_login'
+import PoliceComplaints from './Pages/Police-Pages/policeComplaints'
+import PoliceInquires from './Pages/Police-Pages/police_inquiries'
+import PoliceOfficers from './Pages/Police-Pages/police_officers'
 
 
 
@@ -30,6 +34,14 @@ function App() {
 
 
         <Route path ='/adminhome' element={<AdminHome/>}/>
+        <Route path ='/policelogin' element={<Police_login/>}/>
+        <Route path ='/policecomplaints' element={<PoliceComplaints/>}/>
+        <Route path='/policeinquires' element={<PoliceInquires></PoliceInquires>}></Route>
+        <Route path='/policeofficer' element={<PoliceOfficers></PoliceOfficers>}></Route>
+
+
+
+
 
       </Routes>
     </div>  
