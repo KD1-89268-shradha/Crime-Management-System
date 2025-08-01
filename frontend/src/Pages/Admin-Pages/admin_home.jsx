@@ -1,5 +1,5 @@
-// import AdminNavBar from "../../Components/Admin-Components/admin_navbar";
-// import Footer from "../../Components/User-Components/footer";
+import AdminNavBar from '../../components/Admin-Components/admin_navbar';
+import Footer from '../../Components/User-Components/footer';
 import HomeImage from '../../Images/admin-home.jpg'
 import { Link } from "react-router-dom";
 // import AdminHomeProtection from "./admin_Protection";
@@ -8,7 +8,7 @@ function AdminHome(){
     return(
         <>
         {/* <AdminHomeProtection> */}
-        {/* <AdminNavBar/> */}
+        <AdminNavBar/>
 
         <div className="home-container">
                 <header className="home-header">
@@ -50,7 +50,7 @@ function AdminHome(){
 
         </div>
 
-        {/* <Footer/> */}
+        <Footer/>
         {/* </AdminHomeProtection> */}
         </>
     );
