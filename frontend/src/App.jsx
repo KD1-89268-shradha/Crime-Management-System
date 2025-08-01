@@ -11,7 +11,7 @@ import UserLogin from './Pages/User-Pages/login'
 import AdminInquires from './Pages/Admin-Pages/admin_inquries'
 import AdminPoliceOfficers from './Pages/Admin-Pages/admin_police_officers'
 import ComplaintDetails from './components/User-Components/complaint_details'
-
+import Complaints from './Pages/User-Pages/complaints'
 import Police_login from './Pages/Police-Pages/police_login'
 import PoliceComplaints from './Pages/Police-Pages/policeComplaints'
 import PoliceInquires from './Pages/Police-Pages/police_inquiries'
@@ -42,8 +42,8 @@ function App() {
         <Route path='/adminhome' element={<AdminHome />}></Route>
         <Route path='/register' element={<RegisterUser />} />
         <Route path='/user' element={<UserLogin />} />
-
-
+        <Route path='/complaints' element={<Complaints />} />
+        <Route path="/updateComplaint/:complaintId" element={<UpdateComplaint />} />
 
         <Route path ='/adminhome' element={<AdminHome/>}/>
 
