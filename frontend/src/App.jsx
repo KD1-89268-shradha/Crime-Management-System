@@ -14,6 +14,12 @@ import UserLogin from './Pages/User-Pages/login'
 
 
 
+
+
+import Contact from './Pages/User-Pages/contact';
+
+
+
 function App() {
   return (
     <div className='App'>
@@ -30,7 +36,7 @@ function App() {
 
 
         <Route path ='/adminhome' element={<AdminHome/>}/>
-
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </div>  
   )
