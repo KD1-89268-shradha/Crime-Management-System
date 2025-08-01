@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import Footer from '../../components/User-Components/footer';
+import StatusComponent from "../../Component/Police-Component/status_complaints"
+import RenderComponent from "../../Component/Police-Component/render_complaints"
 const button = [
     'Complaints', 'Assign Officer', 'Change Status'
 ]
@@ -17,7 +19,8 @@ const PoliceComplaints = () => {
 
         <section className="home-section">
             
-            
+            <StatusComponent buttons={button} isSelected={isSelected} setIsSelected={setIsSelected}/>
+            <RenderComponent index={isSelected}/> 
 
             
         </section>
