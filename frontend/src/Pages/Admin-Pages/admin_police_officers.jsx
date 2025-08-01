@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import AdminNavBar from "../../Components/Admin-Components/admin_navbar";
-import Footer from "../../Components/User-Components/footer";
+import Footer from '../../components/User-Components/footer';
 import policeImage from '../../Images/Officers.jpeg';
 import constableImage from '../../Images/constable.jpg';
 import inspectorImage from '../../Images/inspector.jpg';

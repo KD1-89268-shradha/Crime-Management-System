@@ -30,6 +30,10 @@ import Contact from './Pages/User-Pages/contact';
 import UpdateComplaint from './Pages/User-Pages/update'
 import Status from './Pages/User-Pages/status'
 import History from './Pages/User-Pages/history'
+import AddPoliceStation from './components/Admin-Components/add_police_station'
+import AddPoliceOfficer from './components/Admin-Components/add_police_officer'
+import UpdatePoliceStation from './Pages/Admin-Pages/update_police_station'
+// import PoliceProtection from './Pages/Police-Pages/police_protection'
 
 import AddPoliceStation from './components/Admin-Components/add_police_station'
 import AddPoliceOfficer from './components/Admin-Components/add_police_officer'
@@ -126,82 +130,13 @@ function App() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <Route path='/status' element={<Status />} />
     <Route path='/history' element={<History />} />
+    <Route path='/add-police-station' element={<AddPoliceStation />} />
+    <Route path='/add-police-officer' element={<AddPoliceOfficer />} />
+
+
+    <Route path="/update-police-station/:id" element={<UpdatePoliceStation />} />
 
     <Route path='/add-police-station' element={<AddPoliceStation />} />
     <Route path='/add-police-officer' element={<AddPoliceOfficer />} />

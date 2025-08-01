@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../../Components/User-Components/footer';
+import Footer from '../../components/User-Components/footer';
 import { useState } from "react";
 import { toast } from "react-toastify";
 
