@@ -19,9 +19,14 @@ import PoliceOfficers from './Pages/Police-Pages/police_officers'
 
 
 
+
+import Complaints from './Pages/User-Pages/complaints';
+import ComplaintDetailsUser from './Pages/User-Pages/complaint_details';
+
 import AdminLogin from './Pages/Admin-Pages/admin_login'
 // import AdminComplaints from './Pages/Admin-Pages/admin_complaints'
  
+
 
 
 function App() {
@@ -38,6 +43,17 @@ function App() {
         <Route path='/user' element={<UserLogin />} />
 
 
+
+
+
+
+
+
+
+
+
+        <Route path ='/complaint' element={<Complaints/>}/>
+        <Route path='/viewDetails' element={<ComplaintDetailsUser />} />
 
         <Route path ='/adminhome' element={<AdminHome/>}/>
         <Route path ='/policelogin' element={<Police_login/>}/>
@@ -101,6 +117,7 @@ function App() {
         
         <Route path='/login/admin' element={<AdminLogin />} />
         {/* <Route path='/admin-complaints' element={<AdminComplaints />} /> */}
+
 
       </Routes>
     </div>  
