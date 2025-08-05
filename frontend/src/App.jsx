@@ -35,8 +35,11 @@ import AddPoliceOfficer from './components/Admin-Components/add_police_officer'
 import UpdatePoliceStation from './Pages/Admin-Pages/update_police_station'
 // import PoliceProtection from './Pages/Police-Pages/police_protection'
 
+<<<<<<< HEAD
 // import AddPoliceStation from './components/Admin-Components/add_police_station'
 // import AddPoliceOfficer from './components/Admin-Components/add_police_officer'
+=======
+>>>>>>> aed0ec4b9a589225a89221807cc265d0808f4123
 // import UpdatePoliceStation from './Pages/Admin-Pages/update_police_station'
 // import PoliceProtection from './Pages/Police-Pages/police_protection'
 
@@ -141,7 +144,7 @@ function App() {
     {/* <Route path='/add-police-station' element={<AddPoliceStation />} /> */}
     {/* <Route path='/add-police-officer' element={<AddPoliceOfficer />} /> */}
 
-    {/* <Route path="/update-police-station/:id" element={<UpdatePoliceStation />} /> */}
+    
 
 
       </Routes>
