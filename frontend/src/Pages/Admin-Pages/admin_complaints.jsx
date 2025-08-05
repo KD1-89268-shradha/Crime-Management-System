@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AdminNavBar from "../../components/Admin-Components/admin_navbar";
 import StatusComponent from "../../components/Admin-Components/status_component";
-import Footer from "../../Components/User-Components/footer";
+import Footer from "../../components/User-Components/footer";
 // import RenderComponent from "../../Components/Admin-Components/render_complaint_component";
 import RenderComponent from "../../components/Admin-Components/render_complaint_component";
 import { Link } from "react-router-dom";

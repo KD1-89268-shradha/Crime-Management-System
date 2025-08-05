@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Footer from '../User-Components/footer';
 import AdminNavBar from './admin_navbar';
 import Form from 'react-bootstrap/Form';
-import { registerPoliceOfficer } from '../../services/admin-services/police_officer';// Adjust the path as needed
+import { registerPoliceOfficer } from '../../services/Admin-Services/police_officer';// Adjust the path as needed
 import { fetchPoliceStations } from '../../services/Admin-Services/police_station'; // Adjust the path as needed
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
