@@ -41,10 +41,10 @@ public class PoliceOfficerServiceImpl implements PoliceOfficerService {
         if (policeOfficer.getDesignation() == Designation.HEAD) {
             policeOfficer.setPassword(policeOfficerDTO.getOfficerName());
         }
-        
+
         return convertToDTO(policeOfficerRepository.save(policeOfficer));
     }
-    
+
     @Override
     public PoliceOfficerDTO login(String email, String password) {
         PoliceOfficer officer = policeOfficerRepository.findByEmail(email);
@@ -52,19 +52,17 @@ public class PoliceOfficerServiceImpl implements PoliceOfficerService {
         if (officer != null && password.equals(officer.getPassword())) {
             // Convert entity to DTO
             return new PoliceOfficerDTO(
-                officer.getId(),
-                officer.getOfficerName(),
-                officer.getEmail(),
-                officer.getDesignation(),
-                officer.getContactNumber(),
-                officer.getPoliceStation().getId(),
-                officer.isDeleted()
-            );
+                    officer.getId(),
+                    officer.getOfficerName(),
+                    officer.getEmail(),
+                    officer.getDesignation(),
+                    officer.getContactNumber(),
+                    officer.getPoliceStation().getId(),
+                    officer.isDeleted());
         }
 
         return null; // Login failed
     }
-
 
     @Override
     public List<PoliceOfficerDTO> getAllPoliceOfficers() {
@@ -77,7 +75,7 @@ public class PoliceOfficerServiceImpl implements PoliceOfficerService {
     public void deletePoliceOfficer(Long id) {
         policeOfficerRepository.deleteById(id);
     }
-    
+
     @Override
     public List<PoliceOfficerDTO> getOfficersByStationId(Long stationId) {
         List<PoliceOfficer> officers = policeOfficerRepository.findByPoliceStationId(stationId);
@@ -105,7 +103,7 @@ public class PoliceOfficerServiceImpl implements PoliceOfficerService {
         if (policeOfficer.getDesignation() == Designation.HEAD) {
             policeOfficer.setPassword(policeOfficerDTO.getOfficerName());
         }
-        
+
         return convertToDTO(policeOfficerRepository.save(policeOfficer));
     }
 
@@ -122,4 +120,3 @@ public class PoliceOfficerServiceImpl implements PoliceOfficerService {
         return dto;
     }
 }
-
