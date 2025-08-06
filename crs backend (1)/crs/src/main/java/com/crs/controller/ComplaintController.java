@@ -53,4 +53,56 @@ public class ComplaintController {
     }
 
    
+
+
+
+
+
+
+
+
+
+
+
+
+    @GetMapping("/Pending")
+    public ResponseEntity<List<ComplaintDTO>> getAllPendingComplaints() {
+        List<ComplaintDTO> complaints = complaintService.getAllPendingComplaints();
+        return ResponseEntity.ok(complaints);
+    }
+
+    @GetMapping("/Pending/{policeStationId}")
+    public ResponseEntity<List<ComplaintDTO>> getAllPendingComplaintsByPoliceStation(@PathVariable Long policeStationId) {
+        List<ComplaintDTO> complaints = complaintService.getAllPendingComplaintsByPoliceStation(policeStationId);
+        return ResponseEntity.ok(complaints);
+    }
+
+    @GetMapping("/Assigned")
+    public ResponseEntity<List<ComplaintDTO>> getAllAssignedComplaints() {
+        List<ComplaintDTO> complaints = complaintService.getAllAssignedComplaints();
+        return ResponseEntity.ok(complaints);
+    }
+
+    @GetMapping("/Assigned/{policeStationId}")
+    public ResponseEntity<List<ComplaintDTO>> getAllAssignedComplaintsByPoliceStation(@PathVariable Long policeStationId) {
+        List<ComplaintDTO> complaints = complaintService.getAllAssignedComplaintsByPoliceStation(policeStationId);
+        return ResponseEntity.ok(complaints);
+    }
+
+    @GetMapping("/user/{userId}")
+    public ResponseEntity<List<ComplaintDTO>> getComplaintsByUser(@PathVariable Long userId) {
+        List<ComplaintDTO> complaints = complaintService.getComplaintsByUser(userId);
+        return ResponseEntity.ok(complaints);
+    }
+    
+    @PutMapping("/{id}")
+    public ComplaintDTO updateComplaint(@PathVariable Long id, @RequestBody ComplaintDTO complaintDTO) {
+        return complaintService.updateComplaint(id, complaintDTO);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteComplaint(@PathVariable Long id) {
+        complaintService.deleteComplaint(id);
+        return ResponseEntity.noContent().build();
+    }
 }
