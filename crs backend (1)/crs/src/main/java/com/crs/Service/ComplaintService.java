@@ -16,4 +16,17 @@ public interface ComplaintService {
 
 
 
+
+    List<ComplaintDTO> getAllAssignedComplaints();
+
+    List<ComplaintDTO> getAllAssignedComplaintsByPoliceStation(Long policeStationId);
+
+    List<ComplaintDTO> getComplaintsByUser(Long userId);
+
+    void deleteComplaint(Long id);
+
+    ComplaintDTO updateComplaint(Long id, ComplaintDTO complaintDTO);
+
+
+
 }
